@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="center">
+		<div class="resultado">
+			<input type="text" id="resultado" oninput="checkInputAlf(this)">
+		</div> <!-- RESULTADO -->
+		<div class="calculadora">
+			<table>
+				<tr>
+					<td><button class="item" value="/">/</button></td>
+					<td><button class="item" value="-">-</button></td>
+					<td><button class="item" value="*">x</button></td>
+					<td><button class="item" value="+">+</button></td>
+				</tr>
+				<tr>
+					<td><button class="item" value="7">7</button></td>
+					<td><button class="item" value="8">8</button></td>
+					<td><button class="item" value="9">9</button></td>
+					<td rowspan="4" style="background-color:#ED8D3B;"><button style="padding:80px 22px;" class="item" onclick="calcular()">=</button></td>
+				</tr>
+				<tr>
+					<td><button class="item" value="4">4</button></td>
+					<td><button class="item" value="5">5</button></td>
+					<td><button class="item" value="6">6</button></td>
+				</tr>
+				<tr>
+					<td><button class="item" value="1">1</button></td>
+					<td><button class="item" value="2">2</button></td>
+					<td><button class="item" value="3">3</button></td>
+				</tr>
+				<tr>
+					<td><button class="item" value="0">0</button></td>
+					<td><button class="item" value=".">.</button></td>
+					<td><button class="item" value="c">C</button></td>
+				</tr>
+			</table>
+
+		</div> <!-- CALCULADORA -->
+	</div> <!-- CENTER -->
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>
